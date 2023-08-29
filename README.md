@@ -5,34 +5,7 @@ Efficient and Robust Video Object Segmentation Through Isogenous Memory Sampling
 Training
 Data preparation
 
-I recommend either softlinking (ln -s) existing data or use the provided download_datasets.py to structure the datasets as our format. download_datasets.py might download more than what you need -- just comment out things that you don't like. The script does not download BL30K because it is huge (>600GB) and we don't want to crash your harddisks. See below.
-
-├── STCN
-├── BL30K
-├── DAVIS
-│   ├── 2016
-│   │   ├── Annotations
-│   │   └── ...
-│   └── 2017
-│       ├── test-dev
-│       │   ├── Annotations
-│       │   └── ...
-│       └── trainval
-│           ├── Annotations
-│           └── ...
-├── static
-│   ├── BIG_small
-│   └── ...
-├── YouTube
-│   ├── all_frames
-│   │   └── valid_all_frames
-│   ├── train
-│   ├── train_480p
-│   └── valid
-└── YouTube2018
-    ├── all_frames
-    │   └── valid_all_frames
-    └── valid
+I recommend either softlinking (ln -s) existing data or use the provided download_datasets.py to structure the datasets as our format. download_datasets.py might download more than what you need -- just comment out things that you don't like. The script does not download BL30K because it is huge (>600GB) and we don't want to crash your harddisks.
 
 BL30K
 
