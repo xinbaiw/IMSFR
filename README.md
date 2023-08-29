@@ -14,7 +14,7 @@ BL30K is a synthetic dataset proposed in MiVOS.
 You can either use the automatic script download_bl30k.py or download it manually from MiVOS. Note that each segment is about 115GB in size -- 700GB in total. You are going to need ~1TB of free disk space to run the script (including extraction buffer).
 Training commands
 
-CUDA_VISIBLE_DEVICES=[a,b] OMP_NUM_THREADS=4 python -m torch.distributed.launch --master_port [cccc] --nproc_per_node=2 train.py --id [defg] --stage [h]
+    CUDA_VISIBLE_DEVICES=[a,b] OMP_NUM_THREADS=4 python -m torch.distributed.launch --master_port [cccc] --nproc_per_node=2 train.py --id [defg] --stage [h]
 
 We implemented training with Distributed Data Parallel (DDP) with two 11GB GPUs. Replace a, b with the GPU ids, cccc with an unused port number, defg with a unique experiment identifier, and h with the training stage (0/1/2/3).
 
